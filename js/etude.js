@@ -47,7 +47,7 @@ $(function () {
     $('.sns_slide').slick({
         arrows: false,
         fade: true,
-
+        autoplay: true,
     });
 
 
