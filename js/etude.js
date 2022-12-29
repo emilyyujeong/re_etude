@@ -50,5 +50,34 @@ $(function () {
         autoplay: true,
     });
 
+    $('.news_slide').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 2,
+    });
+
+    $('.news .arrows i:nth-child(1)').on('click', function () {
+        $('.news_slide').slick('slickPrev')
+    });
+    $('.news .arrows i:nth-child(2)').on('click', function () {
+        $('.news_slide').slick('slickNext')
+    });
+
+
+    $(Window).on('scroll', function () {
+        var scr = $(window).scrollTop();
+        if (scr > 300) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+
+    });
+
+
+    $('#toTop').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 1000)
+    })
+
 
 })
