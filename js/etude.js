@@ -1,4 +1,24 @@
 $(function () {
+
+
+    $('.mopen').on('click', function () {
+        $(this).toggleClass('on');
+        $('.cover').toggleClass('on');
+        $('nav').toggleClass('on');
+    });
+
+    $('.cover li').on('click', function () {
+        $('.cover').removeClass('on');
+        $('.mopen').removeClass('on');
+        $('nav').toggleClass('on');
+    });
+
+    $('.cover').on('wheel', function (e) {
+        e.preventDefault();
+    });
+
+
+
     $('.mainSlide').slick({
         arrows: false,
         dots: true,
@@ -81,3 +101,4 @@ $(function () {
 
 
 })
+
