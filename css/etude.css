@@ -1,15 +1,127 @@
-/* * {
-    outline: 1px solid tomato;
-} */
-
-
 .inner {
     position: relative;
     width: 1200px;
     margin: 0 auto;
 }
 
+
+
+
+.cover {
+    position: fixed;
+    inset: 0 0 0 0;
+    background: #ffffff2c;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    z-index: 998;
+
+    display: flex;
+
+    display: none;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.cover ul {
+    padding-top: 150px;
+    line-height: 100px;
+}
+
+.cover ul>li {
+    display: block;
+    text-align: center;
+
+
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+.cover.on {
+    display: block;
+}
+
+.mopen {
+    position: fixed;
+    inset: auto auto auto auto;
+    z-index: 999;
+    width: 30px;
+    height: 30px;
+}
+
+.mopen::before,
+.mopen::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.mopen::before {
+    inset: 5px 5px auto 5px;
+}
+
+.mopen::after {
+    inset: auto 5px 5px 5px;
+}
+
+.mopen button {
+    font-size: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+
+.mopen button::before,
+.mopen button::after {
+    content: "";
+    position: absolute;
+    inset: 50% 5px auto 5px;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.mopen button::before {
+    transform: translate(0, -50%);
+}
+
+.mopen button::after {
+    transform: translate(0, -50%);
+}
+
+
+.mopen.on::before {
+    opacity: 0;
+
+}
+
+.mopen.on::after {
+    opacity: 0;
+}
+
+.mopen.on button::before {
+    transform: translate(0, -50%) rotate(45deg);
+}
+
+.mopen.on button::after {
+    transform: translate(0, -50%) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
 #header {
+    position: relative;
     line-height: 100px;
     position: fixed;
     top: 0;
@@ -45,6 +157,19 @@
     margin: 0 5px;
 }
 
+nav.on {
+    display: none;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link i {
+    margin-right: 100px;
+}
 
 
 /* mainVisual */
@@ -128,7 +253,7 @@
     display: inline-block;
     width: 150px;
     height: 2px;
-    background: rgba(255, 255, 255, 0.397);
+    background: #ffffff65;
     margin: 1px;
 }
 
