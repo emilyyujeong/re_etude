@@ -51,6 +51,12 @@ $(function () {
 
     })
 
+
+
+
+
+
+
     $('.wn_slide').slick({
         arrows: false,
         slidesToShow: 4,

@@ -171,6 +171,42 @@ nav.on {
     margin-right: 100px;
 }
 
+/* MOBILE RESPONSIVE HEADER */
+
+@media (max-width:768px) {
+    button {
+        display: block;
+    }
+
+    #header nav {
+        display: none;
+    }
+
+
+    #header h1 img {
+
+        width: 108px;
+    }
+
+
+
+
+    .mopen {
+        position: fixed;
+        inset: 10px auto 5px auto;
+        z-index: 999;
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+
+
+
+
+
 
 /* mainVisual */
 
@@ -264,6 +300,63 @@ nav.on {
 .mainVisual .mainSlide .slick-dots>li button {
     display: none;
 }
+
+
+
+/* MOBILE RESPONSIVE VERSION CONTENT(MAINVISUAL) */
+
+@media only screen and (max-width: 768px) {
+    .mainVisual .mainSlide .itm01 {
+        background: url(../img/main01_mo.jpg)no-repeat center center/cover;
+    }
+
+    .mainVisual .mainSlide .itm02 {
+        background: url(../img/main02_mo.jpg)no-repeat center center/cover;
+    }
+
+    .mainVisual .mainSlide .itm03 {
+        background: url(../img/main03_mo.jpg)no-repeat center center/cover;
+    }
+
+    .mainVisual .mainSlide .itm04 {
+        background: url(../img/main04_mo.jpg)no-repeat center center/cover;
+    }
+
+    .mainVisual .mainSlide .itm05 {
+        background: url(../img/main05_mo.jpg)no-repeat center center/cover;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mainVisual .mainSlide .itm01 {
+        background: url(../img/main01.jpg)no-repeat center center/cover;
+    }
+
+    .mainVisual .mainSlide .itm02 {
+        background: url(../img/main02.jpg)no-repeat center center/cover;
+    }
+
+    .mainVisual .mainSlide .itm03 {
+        background: url(../img/main03.jpg)no-repeat center center/cover;
+    }
+
+    .mainVisual .mainSlide .itm04 {
+        background: url(../img/main04.jpg)no-repeat center center/cover;
+    }
+
+    .mainVisual .mainSlide .itm05 {
+        background: url(../img/main05.jpg)no-repeat center center/cover;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 /* new_product slide */
