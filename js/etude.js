@@ -53,6 +53,20 @@ $(function () {
 
 
 
+    $('.new_pro_slide').slick({
+        arrows: false,
+        slideToShow: 4,
+        responsive: [
+            {
+                breakpoint: 768,
+                setting: {
+                    slideToShow: 2
+                }
+            }
+        ]
+
+    })
+
 
 
 
@@ -60,6 +74,15 @@ $(function () {
     $('.wn_slide').slick({
         arrows: false,
         slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+        ]
     });
 
     $('.whatsnew .arrows i:nth-child(1)').on('click', function () {
@@ -80,6 +103,7 @@ $(function () {
         arrows: false,
         dots: false,
         slidesToShow: 2,
+
     });
 
     $('.news .arrows i:nth-child(1)').on('click', function () {

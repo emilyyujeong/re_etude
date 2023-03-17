@@ -395,6 +395,52 @@ nav.on {
     z-index: 1;
 }
 
+@media only screen and (max-width: 768px) {
+
+
+
+    .newProduct {
+        width: auto;
+        padding: 30px 0 80px 0;
+        background: #FBF3EB;
+    }
+
+    .newProduct .inner {
+        display: flex;
+        gap: 30px;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .newProduct .inner figure {
+        flex: 1;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        z-index: 2;
+    }
+
+    .newProduct .inner figure img {
+        width: 100%;
+    }
+
+
+    .newProduct .lnear_slide {
+        transform: translate(0, 150%);
+        font-size: 100px;
+        font-weight: 900;
+        color: #171C8F;
+        z-index: 1;
+    }
+
+
+}
+
+
+
+
+
+
 
 
 /* mainProduct Section - Kajuha*/
@@ -497,6 +543,33 @@ nav.on {
     color: #fff;
 }
 
+
+@media only screen and (max-width: 768px) {
+
+
+    .mainProduct {
+        padding: 100px 0;
+        height: 1900px;
+
+    }
+
+
+    .mainProduct .inner {
+        text-align: center;
+        line-height: 30px;
+        width: auto;
+        padding: 0 30px;
+    }
+
+    .mainProduct .product {
+        padding: 0 30px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
 
 /* SJ Section -Soonjung */
 
@@ -655,6 +728,40 @@ nav.on {
     display: block;
 }
 
+/* SUNJUNG SECTION RESPONSIVE DEGISN */
+
+@media only screen and (max-width: 768px) {
+
+    .sj {
+        margin: -250px 0 50px 0;
+        text-align: center;
+        background: url(../img/sj01.jpg) no-repeat center center/cover;
+    }
+
+    .sj .inner {
+        padding: 100px 0;
+        text-align: center;
+        line-height: 30px;
+        width: auto;
+
+    }
+
+
+    .sj .sj_pro {
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+        width: auto;
+        margin: 60px auto;
+    }
+
+    .sj .sj_pro .right {
+        display: none;
+    }
+
+
+}
 
 
 /* Whatsnew section */
@@ -751,6 +858,48 @@ nav.on {
 
 }
 
+/* Whatsnew section  MOBILE DESIGN*/
+@media only screen and (max-width: 768px) {
+
+    .whatsnew .inner {
+        text-align: center;
+        line-height: 30px;
+        width: auto;
+    }
+
+    .wn_slide {
+        margin: 0 -15px 20px -15px;
+        padding: 0 30px;
+    }
+
+
+    .wn_slide figure {
+        border: 1px solid #ddd;
+        margin: 40px 15px;
+        text-align: center;
+        border-radius: 5px;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+    }
+
+    .whatsnew .arrows i:first-child {
+        margin: 0 0 0 -300px;
+    }
+
+    .whatsnew .arrows i:last-child {
+        margin: 0 0 0 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* sns section */
 
@@ -831,6 +980,95 @@ nav.on {
     margin: 10px 0;
     color: #333;
 }
+
+
+/* Whatsnew section  MOBILE DESIGN*/
+
+@media only screen and (max-width: 768px) {
+
+
+    .sns .inner {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .sns .inner>div {
+        flex: 1;
+    }
+
+    .sns .right {
+        position: relative;
+
+    }
+
+    .sns .right .tito {
+        position: relative;
+        display: flex;
+        gap: 10px;
+    }
+
+    .sns .right h2 {
+        writing-mode: vertical-rl;
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+
+    .sns .right i {
+        position: absolute;
+        top: 30%;
+        left: 33%;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .sns .right strong {
+        position: absolute;
+        font-size: 30px;
+        font-weight: 100;
+        margin: 10px 0;
+        text-align: end;
+        left: 26%;
+
+    }
+
+    .bold {
+        font-weight: 700;
+    }
+
+
+    .sns .left {
+        width: 50%;
+    }
+
+    .sns .left h2 {
+        font-size: 30px;
+        font-weight: 100;
+        margin: 30px 0;
+    }
+
+    .sns .left .link {
+        writing-mode: vertical-lr;
+        margin: 0 0 0 550px;
+    }
+
+    .sns .link i {
+        font-size: 40px;
+        margin: 10px 0;
+        color: #333;
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 /* News&Event section */
 
