@@ -4,9 +4,6 @@
     margin: 0 auto;
 }
 
-
-
-
 .cover {
     position: fixed;
     inset: 0 0 0 0;
@@ -47,6 +44,7 @@
     z-index: 999;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .mopen::before,
@@ -113,13 +111,6 @@
 
 
 
-
-
-
-
-
-
-
 #header {
     position: relative;
     line-height: 100px;
@@ -182,22 +173,44 @@ nav.on {
         display: none;
     }
 
-
     #header h1 img {
-
-        width: 108px;
+        width: 70%;
     }
 
-
-
+    #header .inner {
+        width: auto;
+    }
 
     .mopen {
-        position: fixed;
-        inset: 10px auto 5px auto;
+        position: absolute;
+        display: block;
+        right: 20px;
         z-index: 999;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
+
+    .mopen::before {
+        inset: 5px 5px auto 5px;
+    }
+
+    .mopen::after {
+        inset: auto 5px 5px 5px;
+    }
+
+    .mopen button::before,
+    .mopen button::after {
+        content: "";
+        position: absolute;
+        inset: 50% 5px auto 5px;
+        height: 2px;
+        background: #fff;
+        transition: 0.3s;
+    }
+
+    /* 왜 좌우스크롤이 생기는거지????? */
+
+
 
 }
 
@@ -407,6 +420,7 @@ nav.on {
 
     .newProduct .inner {
         display: flex;
+        flex-direction: column;
         gap: 30px;
         width: auto;
         margin: 0 auto;
@@ -883,11 +897,11 @@ nav.on {
     }
 
     .whatsnew .arrows i:first-child {
-        margin: 0 0 0 -300px;
+        display: none;
     }
 
     .whatsnew .arrows i:last-child {
-        margin: 0 0 0 300px;
+        display: none;
     }
 }
 
@@ -970,12 +984,15 @@ nav.on {
     margin: 30px 0;
 }
 
-.sns .left .link {
-    writing-mode: vertical-lr;
-    margin: 0 0 0 550px;
+.sns .left .sns_link {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
 }
 
-.sns .link i {
+.sns .sns_link i {
+    display: block;
     font-size: 40px;
     margin: 10px 0;
     color: #333;
@@ -988,85 +1005,18 @@ nav.on {
 
 
     .sns .inner {
+        padding: 0 15px;
         display: flex;
         flex-direction: column;
         width: auto;
     }
 
-    .sns .inner>div {
-        flex: 1;
-    }
-
-    .sns .right {
-        position: relative;
-
-    }
-
-    .sns .right .tito {
-        position: relative;
-        display: flex;
-        gap: 10px;
-    }
-
-    .sns .right h2 {
-        writing-mode: vertical-rl;
-        font-size: 30px;
-        font-weight: 100;
-    }
-
-
-    .sns .right i {
-        position: absolute;
-        top: 30%;
-        left: 33%;
-        font-size: 50px;
-        color: #fff;
-    }
-
-    .sns .right strong {
-        position: absolute;
-        font-size: 30px;
-        font-weight: 100;
-        margin: 10px 0;
-        text-align: end;
-        left: 26%;
-
-    }
-
-    .bold {
-        font-weight: 700;
-    }
-
-
     .sns .left {
-        width: 50%;
-    }
-
-    .sns .left h2 {
-        font-size: 30px;
-        font-weight: 100;
-        margin: 30px 0;
-    }
-
-    .sns .left .link {
-        writing-mode: vertical-lr;
-        margin: 0 0 0 550px;
-    }
-
-    .sns .link i {
-        font-size: 40px;
-        margin: 10px 0;
-        color: #333;
+        padding: 50px 0;
+        width: auto;
     }
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -1185,6 +1135,28 @@ nav.on {
     margin: 0 0 0 650px;
 }
 
+@media only screen and (max-width: 768px) {
+
+
+    .news .inner {
+        line-height: 30px;
+        width: auto;
+    }
+
+    .news_slide {
+        margin: 40px 15px 20px 15px;
+
+    }
+
+    .news .arrows i:first-child {
+        display: none;
+    }
+
+    .news .arrows i:last-child {
+        display: none;
+    }
+
+}
 
 
 
@@ -1248,4 +1220,78 @@ nav.on {
 
 #f_link option {
     padding: 5px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #toTop {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+
+        display: none;
+    }
+
+    #toTop i {
+        background: #fff;
+        color: #666666;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+
+    /* footer */
+
+    #footer {
+        text-align: center;
+        font-size: 14px;
+        color: #606060;
+        padding: 50px 0;
+        background: #f7f7f7;
+    }
+
+    #footer .inner {
+        width: auto;
+    }
+
+    #footer .top>ul {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+
+    #footer .bottom>div {
+        flex: 2;
+    }
+
+    #footer .bottom {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 50px 0;
+        line-height: 28px;
+    }
+
+    #footer .copy {
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+    }
+
+    #f_link {
+        border: 1px solid #ddd;
+        outline: none;
+        padding: 5px 10px;
+        background: #fff;
+        border: 1px solid #ddd;
+    }
+
+    #f_link option {
+        padding: 5px 20px;
+    }
+
+
 }

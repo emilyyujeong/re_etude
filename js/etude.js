@@ -25,7 +25,14 @@ $(function () {
         autoplaySpeed: 4000,
         pauseOnHover: false,
         pauseOnFocus: false,
-
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    dots: false,
+                }
+            },
+        ]
     });
 
     $(window).on('scroll', function () {
@@ -103,7 +110,14 @@ $(function () {
         arrows: false,
         dots: false,
         slidesToShow: 2,
-
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
 
     $('.news .arrows i:nth-child(1)').on('click', function () {
