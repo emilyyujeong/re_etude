@@ -134,6 +134,7 @@
 }
 
 #header .inner {
+
     display: flex;
     justify-content: space-between;
 }
@@ -208,7 +209,7 @@ nav.on {
         transition: 0.3s;
     }
 
-    /* 왜 좌우스크롤이 생기는거지????? */
+    /* 왜 좌우스크롤이 생기는거지????? 포기.. */
 
 
 
@@ -277,6 +278,7 @@ nav.on {
 
 .mainVisual .mainSlide .itm02 {
     background: url(../img/main02.jpg)no-repeat center center/cover;
+    color: #fff
 }
 
 .mainVisual .mainSlide .itm03 {
@@ -318,9 +320,14 @@ nav.on {
 
 /* MOBILE RESPONSIVE VERSION CONTENT(MAINVISUAL) */
 
+.mainVisual .mainSlide .inner {
+    bottom: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     .mainVisual .mainSlide .itm01 {
         background: url(../img/main01_mo.jpg)no-repeat center center/cover;
+
     }
 
     .mainVisual .mainSlide .itm02 {
@@ -410,43 +417,10 @@ nav.on {
 
 @media only screen and (max-width: 768px) {
 
-
-
     .newProduct {
-        width: auto;
-        padding: 30px 0 80px 0;
-        background: #FBF3EB;
+        display: none;
+
     }
-
-    .newProduct .inner {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: auto;
-        margin: 0 auto;
-    }
-
-    .newProduct .inner figure {
-        flex: 1;
-        text-align: center;
-        line-height: 50px;
-        font-size: 20px;
-        z-index: 2;
-    }
-
-    .newProduct .inner figure img {
-        width: 100%;
-    }
-
-
-    .newProduct .lnear_slide {
-        transform: translate(0, 150%);
-        font-size: 100px;
-        font-weight: 900;
-        color: #171C8F;
-        z-index: 1;
-    }
-
 
 }
 
@@ -749,7 +723,7 @@ nav.on {
     .sj {
         margin: -250px 0 50px 0;
         text-align: center;
-        background: url(../img/sj01.jpg) no-repeat center center/cover;
+        background: none;
     }
 
     .sj .inner {
@@ -813,6 +787,7 @@ nav.on {
     font-size: 15px;
     font-weight: 500;
     margin: 30px 0;
+    word-break: keep-all;
 
 }
 
@@ -889,6 +864,7 @@ nav.on {
 
     .wn_slide figure {
         border: 1px solid #ddd;
+        height: 350px;
         margin: 40px 15px;
         text-align: center;
         border-radius: 5px;
