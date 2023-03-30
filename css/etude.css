@@ -1,3 +1,10 @@
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
 .inner {
     position: relative;
     width: 1200px;
@@ -166,9 +173,12 @@ nav.on {
 /* MOBILE RESPONSIVE HEADER */
 
 @media (max-width:768px) {
+
     button {
         display: block;
     }
+
+    #header {}
 
     #header nav {
         display: none;
@@ -208,9 +218,6 @@ nav.on {
         background: #fff;
         transition: 0.3s;
     }
-
-    /* 왜 좌우스크롤이 생기는거지????? 포기.. */
-
 
 
 }
