@@ -184,6 +184,10 @@ nav.on {
         display: none;
     }
 
+    #header h1 {
+        padding-left: 15px;
+    }
+
     #header h1 img {
         width: 70%;
     }
@@ -731,6 +735,7 @@ nav.on {
         margin: -250px 0 50px 0;
         text-align: center;
         background: none;
+        padding: 0 15px;
     }
 
     .sj .inner {
