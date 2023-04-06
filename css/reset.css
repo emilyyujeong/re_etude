@@ -37,5 +37,5 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1;
     letter-spacing: -0.025em;
-    /* overflow-x: hidden */
+    word-break: keep-all;
 }
