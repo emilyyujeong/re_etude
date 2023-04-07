@@ -873,6 +873,15 @@ nav.on {
         padding: 0 30px;
     }
 
+    .ht {
+        font-size: 14px;
+
+    }
+
+    .id {
+        font-size: 12px;
+
+    }
 
     .wn_slide figure {
         border: 1px solid #ddd;
@@ -884,12 +893,17 @@ nav.on {
         backdrop-filter: blur(10px);
     }
 
+
     .whatsnew .arrows i:first-child {
         display: none;
     }
 
     .whatsnew .arrows i:last-child {
         display: none;
+    }
+
+    span {
+        font-size: 12px;
     }
 }
 
@@ -1173,27 +1187,38 @@ nav.on {
 
 #footer {
     color: #606060;
-    padding: 50px 0;
+    padding: 30px 0 50px 0;
     background: #f7f7f7;
 }
 
-#footer .top>ul {
-    display: flex;
-    justify-content: space-between;
+#footer .top {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
 }
 
+#footer .top .inner>ul {
+    display: flex;
+    justify-content: space-between;
+
+}
 
 #footer .bottom>div {
     flex: 2;
 }
 
-#footer .bottom {
+#footer .bottom .inner {
     display: flex;
-    margin: 50px 0;
+    padding: 30px 0 0 0;
     line-height: 28px;
+
 }
 
-#footer .copy {
+#footer .bottom .inner>div {
+    flex: 1;
+}
+
+#footer .copy .inner {
+    padding: 30px 0 0 0;
     display: flex;
     justify-content: space-between;
 }
@@ -1251,19 +1276,16 @@ nav.on {
     }
 
 
-    #footer .bottom>div {
-        flex: 2;
-    }
 
-    #footer .bottom {
+    #footer .bottom .inner {
         display: flex;
         flex-direction: column;
         width: auto;
-        margin: 50px 0;
+        margin: 10px 0;
         line-height: 28px;
     }
 
-    #footer .copy {
+    #footer .copy .inner {
         display: flex;
         flex-direction: column;
         line-height: 50px;
