@@ -747,6 +747,11 @@ nav.on {
     }
 
 
+    .sj .sj_pro img {
+
+        height: auto;
+    }
+
     .sj .sj_pro {
         display: flex;
         flex-direction: column;
